@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
+http://www.liquibase.org/xml/ns/dbchangelog https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet author="GIO" id="insert test data into managers table">
+        <insert tableName="managers">
+            <column name="id"/>
+            <column name="first_name" value="Andrej"/>
+            <column name="last_name" value="Grinev"/>
+            <column name="status" value="ACTIVE"/>
+            <column name="created_at" value="2020-06-01 09:30:00"/>
+        </insert>
+        <insert tableName="managers">
+            <column name="id"/>
+            <column name="first_name" value="Luka"/>
+            <column name="last_name" value="Nikitin"/>
+            <column name="status" value="ACTIVE"/>
+            <column name="created_at" value="2020-12-15 10:22:23"/>
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>

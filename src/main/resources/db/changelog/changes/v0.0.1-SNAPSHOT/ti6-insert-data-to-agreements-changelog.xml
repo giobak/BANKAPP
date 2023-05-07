@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
+http://www.liquibase.org/xml/ns/dbchangelog https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet author="GIO" id="insert test data into agreements table">
+        <insert tableName="agreements">
+            <column name="id"/>
+            <column name="account_id" valueComputed="UUID_TO_BIN('5aef1d7f-d14f-4655-9399-25bf27b16588')"/>
+            <column name="product_id" value="1"/>
+            <column name="interest_rate" value="1.5"/>
+            <column name="status" value="ACTIVE"/>
+            <column name="created_at" value="2021-12-02 09:00:00"/>
+        </insert>
+
+        <insert tableName="agreements">
+            <column name="id"/>
+            <column name="account_id" valueComputed="UUID_TO_BIN('5da56ed6-2525-4b82-a376-6a7c085cd67d')"/>
+            <column name="product_id" value="1"/>
+            <column name="status" value="ACTIVE"/>
+            <column name="created_at" value="2021-12-11 09:00:00"/>
+        </insert>
+
+        <insert tableName="agreements">
+            <column name="id"/>
+            <column name="account_id" valueComputed="UUID_TO_BIN('ef15752e-8c95-4d29-91ab-2d5e3db95ecb')"/>
+            <column name="product_id" value="3"/>
+            <column name="interest_rate" value="5.0"/>
+            <column name="status" value="ACTIVE"/>
+            <column name="sum" value="5000"/>
+            <column name="created_at" value="2021-12-23 09:00:00"/>
+        </insert>
+
+        <insert tableName="agreements">
+            <column name="id"/>
+            <column name="account_id" valueComputed="UUID_TO_BIN('922f6cbf-902b-4a96-9d5d-9793bb3e5288')"/>
+            <column name="product_id" value="4"/>
+            <column name="interest_rate" value="6.5"/>
+            <column name="status" value="ACTIVE"/>
+            <column name="created_at" value="2021-12-22 09:00:00"/>
+        </insert>
+
+    </changeSet>
+</databaseChangeLog>

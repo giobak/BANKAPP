@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
+http://www.liquibase.org/xml/ns/dbchangelog https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="drop transactions tables" author="GIO">
+        <preConditions onFail="CONTINUE">
+            <tableExists tableName="transactions"/>
+        </preConditions>
+        <dropTable tableName="transactions"/>
+    </changeSet>
+
+    <changeSet id="drop agreements tables" author="GIO">
+        <preConditions onFail="CONTINUE">
+            <tableExists tableName="agreements"/>
+        </preConditions>
+        <dropTable tableName="agreements"/>
+    </changeSet>
+
+    <changeSet id="drop accounts tables" author="GIO">
+        <preConditions onFail="CONTINUE">
+            <tableExists tableName="accounts"/>
+        </preConditions>
+        <dropTable tableName="accounts"/>
+    </changeSet>
+
+    <changeSet id="drop clients tables" author="GIO">
+        <preConditions onFail="CONTINUE">
+            <tableExists tableName="clients"/>
+        </preConditions>
+        <dropTable tableName="clients"/>
+    </changeSet>
+
+
+    <changeSet id="drop managers tables" author="GIO">
+        <preConditions onFail="CONTINUE">
+            <tableExists tableName="managers"/>
+        </preConditions>
+        <dropTable tableName="managers"/>
+    </changeSet>
+
+    <changeSet id="drop products tables" author="GIO">
+        <preConditions onFail="CONTINUE">
+            <tableExists tableName="products"/>
+        </preConditions>
+        <dropTable tableName="products"/>
+    </changeSet>
+
+</databaseChangeLog>

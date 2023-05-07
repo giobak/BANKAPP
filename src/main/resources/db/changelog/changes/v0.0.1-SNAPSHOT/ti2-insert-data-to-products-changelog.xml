@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
+http://www.liquibase.org/xml/ns/dbchangelog https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet author="GIO" id="insert test data into products table">
+        <insert tableName="products">
+            <column name="id"/>
+            <column name="name" value="Current profitable"/>
+            <column name="status" value="ACTIVE"/>
+            <column name="currency_code" value="USD"/>
+
+            <column name="created_at" value="2021-02-15 09:00:00"/>
+        </insert>
+        <insert tableName="products">
+            <column name="id"/>
+            <column name="name" value="Deposit Stability"/>
+            <column name="status" value="ACTIVE"/>
+            <column name="currency_code" value="USD"/>
+            <column name="interest_rate" value="5.5"/>
+            <column name="limit" value="24"/>
+            <column name="created_at" value="2021-05-10 09:00:00"/>
+        </insert>
+        <insert tableName="products">
+            <column name="id"/>
+            <column name="name" value="Deposit Stability"/>
+            <column name="status" value="ACTIVE"/>
+            <column name="currency_code" value="EUR"/>
+            <column name="interest_rate" value="5.0"/>
+            <column name="limit" value="24"/>
+            <column name="created_at" value="2021-05-10 09:00:00"/>
+        </insert>
+        <insert tableName="products">
+            <column name="id"/>
+            <column name="name" value="Deposit Youth"/>
+            <column name="status" value="ACTIVE"/>
+            <column name="currency_code" value="USD"/>
+            <column name="interest_rate" value="6.5"/>
+            <column name="limit" value="6"/>
+            <column name="created_at" value="2021-09-01 09:00:00"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>

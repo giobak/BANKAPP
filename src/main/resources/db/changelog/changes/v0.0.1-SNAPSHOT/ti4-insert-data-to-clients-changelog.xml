@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
+http://www.liquibase.org/xml/ns/dbchangelog https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet author="GIO" id="insert test data into clients table">
+        <insert tableName="clients">
+            <column name="id" valueComputed="UUID_TO_BIN('1162af81-7d0e-417d-9ae7-2b16456ded68')"/>
+            <column name="manager_id" value="1"/>
+            <column name="status" value="ACTIVE"/>
+            <column name="tax_code" value="1234554321"/>
+            <column name="first_name" value="Tom"/>
+            <column name="last_name" value="Henks"/>
+            <column name="email" value="tom@ggg.com"/>
+            <column name="address" value="NY, Fridrichshagener Str., 55"/>
+            <column name="phone" value="+121212121233"/>
+            <column name="created_at" value="2021-12-01 09:00:00"/>
+        </insert>
+
+        <insert tableName="clients">
+            <column name="id" valueComputed="UUID_TO_BIN('121d98c1-6dfd-402d-984a-6b75e52a44e4')"/>
+            <column name="manager_id" value="1"/>
+            <column name="status" value="ACTIVE"/>
+            <column name="tax_code" value="2233445566"/>
+            <column name="first_name" value="Robert"/>
+            <column name="last_name" value="Deniro"/>
+            <column name="email" value="deniro@ggg.com"/>
+            <column name="address" value="Washington, washington Str., 1"/>
+            <column name="phone" value="+9911293452"/>
+            <column name="created_at" value="2021-12-10 09:00:00"/>
+        </insert>
+
+        <insert tableName="clients">
+            <column name="id" valueComputed="UUID_TO_BIN('98965986-c7af-464d-aee2-e1dbac4c80ff')"/>
+            <column name="manager_id" value="1"/>
+            <column name="status" value="ACTIVE"/>
+            <column name="tax_code" value="3234455466"/>
+            <column name="first_name" value="Chack"/>
+            <column name="last_name" value="Noris"/>
+            <column name="address" value="Texas, mississippi, 12"/>
+            <column name="created_at" value="2021-12-20 09:00:00"/>
+        </insert>
+
+        <insert tableName="clients">
+            <column name="id" valueComputed="UUID_TO_BIN('688e263f-a26f-4e16-833d-2763518a4997')"/>
+            <column name="manager_id" value="2"/>
+            <column name="status" value="ACTIVE"/>
+            <column name="tax_code" value="233223521"/>
+            <column name="first_name" value="Brius"/>
+            <column name="last_name" value="li"/>
+            <column name="email" value="li@ggg.com"/>
+            <column name="address" value="Chancery, 55112"/>
+            <column name="created_at" value="2021-12-20 09:00:00"/>
+        </insert>
+
+    </changeSet>
+</databaseChangeLog>

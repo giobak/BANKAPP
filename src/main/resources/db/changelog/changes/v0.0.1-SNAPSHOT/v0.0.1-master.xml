@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                        https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
+http://www.liquibase.org/xml/ns/dbchangelog https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <include file="/db/changelog/changes/v0.0.1-SNAPSHOT/d1-drop-all-tables.xml"/>
+    <include file="/db/changelog/changes/v0.0.1-SNAPSHOT/t1-create-table-managers-changelog.xml"/>
+    <include file="/db/changelog/changes/v0.0.1-SNAPSHOT/t2-create-table-products-changelog.xml"/>
+    <include file="/db/changelog/changes/v0.0.1-SNAPSHOT/t4-create-table-clients-changelog.xml"/>
+    <include file="/db/changelog/changes/v0.0.1-SNAPSHOT/t5-create-table-accounts-changelog.xml"/>
+    <include file="/db/changelog/changes/v0.0.1-SNAPSHOT/t6-create-table-agreements-changelog.xml"/>
+    <include file="/db/changelog/changes/v0.0.1-SNAPSHOT/t7-create-table-transactions-changelog.xml"/>
+    <include file="/db/changelog/changes/v0.0.1-SNAPSHOT/ti1-insert-data-to-managers-changelog.xml"/>
+    <include file="/db/changelog/changes/v0.0.1-SNAPSHOT/ti2-insert-data-to-products-changelog.xml"/>
+    <include file="/db/changelog/changes/v0.0.1-SNAPSHOT/ti4-insert-data-to-clients-changelog.xml"/>
+    <include file="/db/changelog/changes/v0.0.1-SNAPSHOT/ti5-insert-data-to-accounts-changelog.xml"/>
+    <include file="/db/changelog/changes/v0.0.1-SNAPSHOT/ti6-insert-data-to-agreements-changelog.xml"/>
+    <include file="/db/changelog/changes/v0.0.1-SNAPSHOT/ti7-insert-data-to-transactions-changelog.xml"/>
+</databaseChangeLog>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
+http://www.liquibase.org/xml/ns/dbchangelog https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet author="GIO" id="insert test data into transactions table">
+        <insert tableName="transactions">
+            <column name="id" valueComputed="UUID_TO_BIN('27527a42-5b0f-497d-b93d-4d1c29b689ee')"/>
+            <column name="debit_account_id" valueComputed="UUID_TO_BIN('5aef1d7f-d14f-4655-9399-25bf27b16588')"/>
+            <column name="credit_account_id" valueComputed="UUID_TO_BIN('5da56ed6-2525-4b82-a376-6a7c085cd67d')"/>
+            <column name="type" value="APPROVED"/>
+            <column name="amount" value="1050"/>
+            <column name="description" value="temporary financial assistance"/>
+            <column name="created_at" value="2021-12-20 09:00:00"/>
+        </insert>
+
+        <insert tableName="transactions">
+            <column name="id" valueComputed="UUID_TO_BIN('ec055c92-b761-49e2-9384-3398fb134e6f')"/>
+            <column name="debit_account_id" valueComputed="UUID_TO_BIN('5da56ed6-2525-4b82-a376-6a7c085cd67d')"/>
+            <column name="credit_account_id" valueComputed="UUID_TO_BIN('5aef1d7f-d14f-4655-9399-25bf27b16588')"/>
+            <column name="type" value="APPROVED"/>
+            <column name="amount" value="1050"/>
+            <column name="description" value="return temporary financial assistance"/>
+            <column name="created_at" value="2021-12-22 09:00:00"/>
+        </insert>
+
+        <insert tableName="transactions">
+            <column name="id" valueComputed="UUID_TO_BIN('aa01db2d-98f0-4433-b79c-3ade61317045')"/>
+            <column name="debit_account_id" valueComputed="UUID_TO_BIN('5aef1d7f-d14f-4655-9399-25bf27b16588')"/>
+            <column name="credit_account_id" valueComputed="UUID_TO_BIN('5da56ed6-2525-4b82-a376-6a7c085cd67d')"/>
+            <column name="type" value="APPROVED"/>
+            <column name="amount" value="2000"/>
+            <column name="description" value="temporary financial assistance"/>
+            <column name="created_at" value="2021-12-25 09:00:00"/>
+        </insert>
+
+        <insert tableName="transactions">
+            <column name="id" valueComputed="UUID_TO_BIN('2d78469a-5243-4209-803b-ef524cb6afea')"/>
+            <column name="debit_account_id" valueComputed="UUID_TO_BIN('5da56ed6-2525-4b82-a376-6a7c085cd67d')"/>
+            <column name="credit_account_id" valueComputed="UUID_TO_BIN('5aef1d7f-d14f-4655-9399-25bf27b16588')"/>
+            <column name="type" value="APPROVED"/>
+            <column name="amount" value="1500"/>
+            <column name="description" value="return part of temporary financial assistance"/>
+            <column name="created_at" value="2021-12-27 09:00:00"/>
+        </insert>
+
+    </changeSet>
+</databaseChangeLog>
